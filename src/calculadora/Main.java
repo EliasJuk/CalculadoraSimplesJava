@@ -26,19 +26,19 @@ public class Main{
 
       switch (opcao) {
         case 1:
-          soma();
+          Soma.soma();
           break;
         case 2:
-          subtracao();
+          Subtracao.subtracao();
           break;
         case 3:
-          multiplicacao();
+          Multiplicacao.multiplicacao();
           break;
         case 4:
-          divisao();
+          Divisao.divisao();
           break;
         case 5:
-          quadrado();
+          Quadrado.quadrado();
           break;
         case 0:
           System.out.println("\n========== FIM ============");
@@ -48,90 +48,5 @@ public class Main{
           break;
       }
     }
-  }
-
-  public static int soma(){
-    System.out.println("\n========== SOMA ============");
-
-    System.out.printf("Digite o Primeiro valor: ");
-    Scanner input1 = new Scanner(System.in);
-    int valor1 = input1.nextInt();
-
-    System.out.printf("Digite o Segundo valor: ");
-    Scanner input2 = new Scanner(System.in);
-    int valor2 = input2.nextInt();
-    
-    int soma =  valor1 + valor2;
-    System.out.printf("A Soma entre %d e %d é: %d", valor1, valor2, soma);   
-
-    System.out.printf("\n============================\n\n"); 
-    return 0;
-  }
-
-  public static int subtracao(){
-    System.out.println("\n======= SUBTRAÇÃO =======");
-    
-    System.out.printf("Digite o Primeiro valor: ");
-    Scanner input1 = new Scanner(System.in);
-    int valor1 = input1.nextInt();
-
-    System.out.printf("Digite o Segundo valor: ");
-    Scanner input2 = new Scanner(System.in);
-    int valor2 = input2.nextInt();
-    
-    int subtracao =  valor1 - valor2;
-    System.out.printf("A Subtração entre %d e %d é: %d", valor1, valor2, subtracao);   
-
-    System.out.printf("\n============================\n\n");  
-    return 0;
-  }
-
-
-  public static int multiplicacao(){
-    System.out.println("\n======= MULTIPLICAÇÃO =======");
-
-    System.out.printf("Digite o Primeiro valor: ");
-    Scanner input1 = new Scanner(System.in);
-    int valor1 = input1.nextInt();
-    
-    System.out.printf("Digite o Segundo valor: ");
-    Scanner input2 = new Scanner(System.in);
-    int valor2 = input2.nextInt();
-
-    int multiplicacao =  valor1 * valor2;
-    System.out.printf("A Divisão entre %d e %d é: %d", valor1, valor2, multiplicacao);   
-
-    System.out.printf("\n============================\n\n");  
-    return 0;
-  }
-
-  public static int divisao(){
-    System.out.println("\n======= DIVISÃO =======");
-      
-    System.out.printf("Digite o Primeiro valor: ");
-    Scanner input1 = new Scanner(System.in);
-    int valor1 = input1.nextInt();
-    
-    System.out.printf("Digite o Segundo valor: ");
-    Scanner input2 = new Scanner(System.in);
-    int valor2 = input2.nextInt();
-
-    System.out.printf("A Divisão entre %d e %d é: %.2f", valor1, valor2, ((double)valor1 / valor2));   
-
-    System.out.printf("\n============================\n\n");  
-    return 0;
-  }
-
-  public static int quadrado(){
-    System.out.println("\n======= Quadrado =======");
-    System.out.printf("Digite um valor: ");
-    Scanner input = new Scanner(System.in);
-    int valor = input.nextInt();
-
-    int quadrado = valor * valor;
-    System.out.printf("O Quadrado de %d é: %d", valor, quadrado);
-
-    System.out.printf("\n============================\n\n"); 
-    return 0;
   }
 }
